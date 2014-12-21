@@ -7,20 +7,20 @@ var hex = function(hex) {
 exports.livenet = {
   name: 'livenet',
   magic: hex('f9beb4d9'),
-  addressVersion: 0x00,
+  addressVersion: 23, // A.I. Coin addresses begin with A
   privKeyVersion: 128,
   P2SHVersion: 5,
   hkeyPublicVersion: 0x0488b21e,
   hkeyPrivateVersion: 0x0488ade4,
   genesisBlock: {
-    hash: hex('6FE28C0AB6F1B372C1A6A246AE63F74F931E8365E15A089C68D6190000000000'),
-    merkle_root: hex('3BA3EDFD7A7B12B27AC72C3E67768F617FC81BC3888A51323A9FB8AA4B1E5E4A'),
+    hash: hex('c726f94ea32887573f95352ae58259e32596a5ea5c475f0e2fcdc7b9a948506c'),
+    merkle_root: hex('0123da0013e976472467a8184ac91cd303c69dc8cd98072df4bf8df71dadd2ee'),
     height: 0,
     nonce: 2083236893,
     version: 1,
     prev_hash: buffertools.fill(new Buffer(32), 0),
-    timestamp: 1231006505,
-    bits: 486604799,
+    timestamp: 1417543722, // December 2, 2014 18:8:41 GMT,
+    bits: hex('1d00ffff'),
   },
   dnsSeeds: [
     'seed.bitcoin.sipa.be',
