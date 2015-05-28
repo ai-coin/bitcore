@@ -6,7 +6,7 @@ var hex = function(hex) {
 
 exports.livenet = {
   name: 'livenet',
-  magic: hex('f9beb4d9'),
+  magic: hex('bef9b4d9'), // Stephen Reed - swapped first two bytes for aicoin
   addressVersion: 23, // A.I. Coin addresses begin with A
   privKeyVersion: 128,
   P2SHVersion: 5,
@@ -23,21 +23,15 @@ exports.livenet = {
     bits: hex('1d00ffff'),
   },
   dnsSeeds: [
-    'seed.bitcoin.sipa.be',
-    'dnsseed.bluematt.me',
-    'dnsseed.bitcoin.dashjr.org',
-    'seed.bitcoinstats.com',
-    'seed.bitnodes.io',
-    'bitseed.xf2.org'
   ],
-  defaultClientPort: 8333
+  defaultClientPort: 31416
 };
 
 exports.mainnet = exports.livenet;
 
 exports.testnet = {
   name: 'testnet',
-  magic: hex('0b110907'),
+  magic: hex('110b0907'), // Stephen Reed - swapped first two bytes for aicoin
   addressVersion: 0x6f,
   privKeyVersion: 239,
   P2SHVersion: 196,
@@ -54,8 +48,6 @@ exports.testnet = {
     bits: 486604799,
   },
   dnsSeeds: [
-    'testnet-seed.bitcoin.petertodd.org',
-    'testnet-seed.bluematt.me'
   ],
-  defaultClientPort: 18333
+  defaultClientPort: 27184
 };
